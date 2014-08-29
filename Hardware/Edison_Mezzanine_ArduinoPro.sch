@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -20583,6 +20583,20 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <text x="0.616" y="0.75" size="1.27" layer="51">+</text>
 <text x="-1.384" y="0.75" size="1.27" layer="51">-</text>
 </package>
+<package name="1X12_NO_SILK">
+<pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="2" x="2.54" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="3" x="5.08" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="4" x="7.62" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="5" x="10.16" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="6" x="12.7" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="7" x="15.24" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="8" x="17.78" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="9" x="20.32" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="10" x="22.86" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="11" x="25.4" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="12" x="27.94" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="M12">
@@ -20753,6 +20767,25 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 </technologies>
 </device>
 <device name="1X12_NO_SILK_KIT" package="1X12_NO_SILK_KIT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="11" pad="11"/>
+<connect gate="G$1" pin="12" pad="12"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="NO_SILK" package="1X12_NO_SILK">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="10" pad="10"/>
@@ -21080,8 +21113,8 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <part name="GND11" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="1.8V" device=""/>
 <part name="P+3" library="SparkFun" deviceset="3.3V" device="" value="VCC"/>
-<part name="JP2" library="SparkFun-Connectors" deviceset="M12" device="1X12_NO_SILK_KIT" value="M121X12_NO_SILK_KIT"/>
-<part name="JP3" library="SparkFun-Connectors" deviceset="M12" device="1X12_NO_SILK_KIT" value="M121X12_NO_SILK_KIT"/>
+<part name="JP2" library="SparkFun-Connectors" deviceset="M12" device="NO_SILK" value="M12NO_SILK"/>
+<part name="JP3" library="SparkFun-Connectors" deviceset="M12" device="NO_SILK" value="M12NO_SILK"/>
 <part name="JP4" library="SparkFun-Connectors" deviceset="M02" device="1X02_NO_SILK" value="M021X02_NO_SILK"/>
 <part name="JP5" library="SparkFun-Connectors" deviceset="M02" device="1X02_NO_SILK" value="M021X02_NO_SILK"/>
 </parts>
