@@ -1,4 +1,4 @@
-Edison_Mezzanine_ArduinoPro
+Edison_Arduino_Block
 ===========================
 
 Piggyback an Arduino onto your Edison with the Edison Arduino Pro board. This board features the same ATmega328P you'll find on Arduino Uno's, Pro's, and Pro Mini's. The 8-bit microcontroller workhorse is connected to the Edison via a selectable UART, so your Edison can interact with the Arduino over a serial interface.
