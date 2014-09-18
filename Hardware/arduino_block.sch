@@ -16358,6 +16358,7 @@ Various fiducial points for machine vision alignment.</description>
 <text x="-2.54" y="-86.36" size="1.27" layer="96">&gt;VALUE</text>
 <text x="-2.54" y="33.02" size="1.27" layer="95" align="top-left">&gt;NAME</text>
 <pin name="GP84_SD_CLK_FB" x="43.18" y="-5.08" length="short" rot="R180"/>
+<pin name="DCIN" x="-5.08" y="20.32" length="short"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -16371,6 +16372,7 @@ Various fiducial points for machine vision alignment.</description>
 <connect gate="G$1" pin="1.8V" pad="12"/>
 <connect gate="G$1" pin="3.3V@1" pad="8"/>
 <connect gate="G$1" pin="3.3V@2" pad="10"/>
+<connect gate="G$1" pin="DCIN" pad="14"/>
 <connect gate="G$1" pin="FAULT" pad="19"/>
 <connect gate="G$1" pin="FW_RCVR" pad="69"/>
 <connect gate="G$1" pin="GND@1" pad="1"/>
@@ -16443,6 +16445,7 @@ Various fiducial points for machine vision alignment.</description>
 <connect gate="G$1" pin="1.8V" pad="12"/>
 <connect gate="G$1" pin="3.3V@1" pad="8"/>
 <connect gate="G$1" pin="3.3V@2" pad="10"/>
+<connect gate="G$1" pin="DCIN" pad="14"/>
 <connect gate="G$1" pin="FAULT" pad="19"/>
 <connect gate="G$1" pin="FW_RCVR" pad="69"/>
 <connect gate="G$1" pin="GND@1" pad="1"/>
@@ -16515,6 +16518,7 @@ Various fiducial points for machine vision alignment.</description>
 <connect gate="G$1" pin="1.8V" pad="12"/>
 <connect gate="G$1" pin="3.3V@1" pad="8"/>
 <connect gate="G$1" pin="3.3V@2" pad="10"/>
+<connect gate="G$1" pin="DCIN" pad="14"/>
 <connect gate="G$1" pin="FAULT" pad="19"/>
 <connect gate="G$1" pin="FW_RCVR" pad="69"/>
 <connect gate="G$1" pin="GND@1" pad="1"/>
@@ -18390,6 +18394,48 @@ We've spent an enormous amount of time creating and checking these footprints an
 <text x="-0.9525" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-0.9525" y="-1.651" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
+<package name="PAD-JUMPER-2-NO_NO_SILK">
+<smd name="1" x="-0.45" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<smd name="2" x="0.45" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<text x="-0.908" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-0.908" y="-1.651" size="0.4064" layer="27">&gt;VALUE</text>
+</package>
+<package name="PAD-JUMPER-2-NO_YES_SILK">
+<description>Small solder jumper with no paste layer so it will open after reflow.</description>
+<wire x1="0.8" y1="-1" x2="-0.8" y2="-1" width="0.2032" layer="21"/>
+<wire x1="0.8" y1="1" x2="1" y2="0.7" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-1" y1="0.7" x2="-0.8" y2="1" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-1" y1="-0.7" x2="-0.8" y2="-1" width="0.2032" layer="21" curve="90"/>
+<wire x1="0.8" y1="-1" x2="1" y2="-0.7" width="0.2032" layer="21" curve="90"/>
+<wire x1="-0.8" y1="1" x2="0.8" y2="1" width="0.2032" layer="21"/>
+<smd name="1" x="-0.45" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<smd name="2" x="0.45" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<text x="-0.908" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-0.908" y="-1.651" size="0.4064" layer="27">&gt;VALUE</text>
+</package>
+<package name="PAD-JUMPER-2-NO_YES_SILK_ROUND">
+<smd name="1" x="-1.27" y="0" dx="0.3048" dy="0.1524" layer="1" roundness="20" rot="R270" stop="no" thermals="no" cream="no"/>
+<smd name="2" x="1.27" y="0" dx="0.3048" dy="0.1524" layer="1" roundness="20" rot="R90" stop="no" thermals="no" cream="no"/>
+<text x="-2.8575" y="2.2225" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.175" y="-3.4925" size="1.27" layer="27">&gt;VALUE</text>
+<polygon width="0" layer="1">
+<vertex x="0.111125" y="-1.42875" curve="85"/>
+<vertex x="1.381125" y="0" curve="85"/>
+<vertex x="0.111125" y="1.42875"/>
+</polygon>
+<polygon width="0" layer="1">
+<vertex x="-0.111125" y="1.42875"/>
+<vertex x="-0.111125" y="-1.42875" curve="-85"/>
+<vertex x="-1.381125" y="0" curve="-85"/>
+</polygon>
+<polygon width="0.2032" layer="29">
+<vertex x="0" y="1.42875" curve="-90"/>
+<vertex x="1.42875" y="0" curve="-90"/>
+<vertex x="0" y="-1.42875" curve="-90"/>
+<vertex x="-1.42875" y="0" curve="-90"/>
+</polygon>
+<circle x="0" y="0" radius="1.74625" width="0.2032" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="PAD-JUMPER-3-2OF3-NC_BY_TRACE">
@@ -18421,6 +18467,16 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 <wire x1="-0.762" y1="0" x2="1.016" y2="0" width="0.254" layer="94"/>
 </symbol>
+<symbol name="PAD-JUMPER-2-NO">
+<wire x1="0.381" y1="0.635" x2="0.381" y2="-0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
+<wire x1="-0.381" y1="-0.635" x2="-0.381" y2="0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
+<wire x1="2.54" y1="0" x2="1.651" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.651" y2="0" width="0.1524" layer="94"/>
+<text x="-2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="JUMPER-PAD-3-2OF3_NC_BY_TRACE" prefix="SJ">
@@ -18446,6 +18502,40 @@ We've spent an enormous amount of time creating and checking these footprints an
 </gates>
 <devices>
 <device name="" package="PAD-JUMPER-2-NC_BY_TRACE_YES_SILK">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="JUMPER-PAD-2-NO" prefix="SJ">
+<gates>
+<gate name="G$1" symbol="PAD-JUMPER-2-NO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PAD-JUMPER-2-NO_NO_SILK">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="YES_SILK" package="PAD-JUMPER-2-NO_YES_SILK">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="ROUND" package="PAD-JUMPER-2-NO_YES_SILK_ROUND">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -21117,6 +21207,7 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <part name="JP3" library="SparkFun-Connectors" deviceset="M12" device="NO_SILK" value="M12NO_SILK"/>
 <part name="JP4" library="SparkFun-Connectors" deviceset="M02" device="1X02_NO_SILK" value="M021X02_NO_SILK"/>
 <part name="JP5" library="SparkFun-Connectors" deviceset="M02" device="1X02_NO_SILK" value="M021X02_NO_SILK"/>
+<part name="SJ5" library="SparkFun-Passives" deviceset="JUMPER-PAD-2-NO" device="YES_SILK" value="DCIN"/>
 </parts>
 <sheets>
 <sheet>
@@ -21218,6 +21309,7 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <instance part="JP3" gate="G$1" x="228.6" y="109.22" rot="R180"/>
 <instance part="JP4" gate="G$1" x="190.5" y="162.56" rot="R180"/>
 <instance part="JP5" gate="G$1" x="190.5" y="149.86" rot="R180"/>
+<instance part="SJ5" gate="G$1" x="27.94" y="15.24"/>
 </instances>
 <busses>
 </busses>
@@ -21744,6 +21836,11 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <wire x1="12.7" y1="170.18" x2="10.16" y2="170.18" width="0.1524" layer="91"/>
 <label x="10.16" y="170.18" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="SJ5" gate="G$1" pin="2"/>
+<wire x1="33.02" y1="15.24" x2="35.56" y2="15.24" width="0.1524" layer="91"/>
+<label x="35.56" y="15.24" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="GP135_UART_2_TX" class="0">
 <segment>
@@ -21887,6 +21984,13 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <pinref part="C5" gate="G$1" pin="2"/>
 <pinref part="SUPPLY3" gate="G$1" pin="1.8V"/>
 <wire x1="68.58" y1="93.98" x2="68.58" y2="91.44" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="DCIN" class="0">
+<segment>
+<pinref part="SJ5" gate="G$1" pin="1"/>
+<wire x1="22.86" y1="15.24" x2="20.32" y2="15.24" width="0.1524" layer="91"/>
+<label x="20.32" y="15.24" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -22666,6 +22770,18 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <pinref part="U3" gate="G$1" pin="OSC_CLK_OUT_0"/>
 <wire x1="220.98" y1="152.4" x2="223.52" y2="152.4" width="0.1524" layer="91"/>
 <label x="223.52" y="152.4" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="DCIN" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="DCIN"/>
+<wire x1="25.4" y1="152.4" x2="20.32" y2="152.4" width="0.1524" layer="91"/>
+<label x="20.32" y="152.4" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="DCIN"/>
+<wire x1="172.72" y1="152.4" x2="167.64" y2="152.4" width="0.1524" layer="91"/>
+<label x="167.64" y="152.4" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
