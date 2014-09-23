@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -243,6 +243,11 @@ VIN externally!</text>
 <text x="29.972" y="40.132" size="1.27" layer="22" font="vector" ratio="15" rot="SMR270">Arduino Block</text>
 <text x="16.5862" y="22.0472" size="0.8128" layer="22" font="vector" ratio="15" rot="MR0" align="center-left">VSYS</text>
 <text x="16.5862" y="21.1328" size="0.8128" layer="22" font="vector" ratio="15" rot="MR0" align="center-left">DCIN</text>
+<dimension x1="0" y1="1.778" x2="30.48" y2="1.778" x3="15.24" y3="-5.333996875" textsize="1.778" layer="51" dtype="horizontal" unit="inch"/>
+<dimension x1="1.905" y1="1.905" x2="28.575" y2="1.905" x3="15.24" y3="-2.794" textsize="1.778" layer="51" dtype="horizontal" unit="inch"/>
+<dimension x1="28.575" y1="1.905" x2="28.575" y2="42.545" x3="33.528" y3="22.225" textsize="1.778" layer="51" dtype="vertical" unit="inch"/>
+<dimension x1="28.752" y1="0" x2="26.67" y2="62.23" x3="36.576" y3="31.115" textsize="1.778" layer="51" dtype="vertical" unit="inch"/>
+<text x="31.75" y="-2.54" size="1.778" layer="51">Note: Units are in Inches</text>
 </plain>
 <libraries>
 <library name="SparkFun-Aesthetics">
@@ -2463,16 +2468,12 @@ design rules under a new name.</description>
 <vertex x="0" y="62.23"/>
 </polygon>
 <polygon width="0.1778" layer="1" spacing="0.254" rank="6">
-<vertex x="30.48" y="1.728" curve="-90"/>
+<vertex x="30.48" y="1.982" curve="-90"/>
 <vertex x="28.752" y="0"/>
 <vertex x="1.778" y="0" curve="-90"/>
 <vertex x="0" y="1.778"/>
-<vertex x="0" y="60.452"/>
 <vertex x="0" y="62.23"/>
-<vertex x="1.778" y="62.23"/>
-<vertex x="28.702" y="62.23"/>
 <vertex x="30.48" y="62.23"/>
-<vertex x="30.48" y="60.452"/>
 </polygon>
 <via x="27.1272" y="20.5232" extent="1-16" drill="0.3302"/>
 <via x="28.2448" y="22.1742" extent="1-16" drill="0.3302"/>
