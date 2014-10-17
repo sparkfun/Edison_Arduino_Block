@@ -164,9 +164,7 @@
 <text x="2.286" y="33.147" size="0.889" layer="21" font="vector" ratio="15" rot="SR270" align="top-center">Reset</text>
 <text x="3.429" y="15.875" size="0.889" layer="21" font="vector" ratio="15" align="center-left">GND</text>
 <text x="3.429" y="14.6685" size="0.889" layer="21" font="vector" ratio="15" align="center-left">BLK</text>
-<text x="11.43" y="6.35" size="0.8128" layer="22" font="vector" ratio="15" rot="MR0" align="center-left">Cut this jumper
-if you supply
-VIN externally!</text>
+<text x="11.43" y="6.35" size="0.8128" layer="22" font="vector" ratio="15" rot="MR0" align="center-left">VSYS</text>
 <text x="4.572" y="6.35" size="0.889" layer="21" font="vector" ratio="15" rot="SR270" align="center">PWR</text>
 <text x="4.572" y="10.16" size="0.889" layer="21" font="vector" ratio="15" rot="SR270" align="center">D13</text>
 <text x="12.7" y="18.161" size="0.8128" layer="22" font="vector" ratio="15" rot="MR0" align="center-left">UART1</text>
@@ -208,46 +206,47 @@ VIN externally!</text>
 <text x="24.13" y="46.863" size="1.016" layer="21" font="vector" ratio="15" rot="R270" align="center-right">7</text>
 <text x="26.67" y="46.863" size="1.016" layer="21" font="vector" ratio="15" rot="R270" align="center-right">8</text>
 <text x="29.21" y="46.863" size="1.016" layer="21" font="vector" ratio="15" rot="R270" align="center-right">9</text>
-<text x="1.27" y="60.071" size="1.016" layer="22" font="vector" ratio="15" rot="MR90" align="center-right">VIN</text>
-<text x="3.81" y="60.071" size="1.016" layer="22" font="vector" ratio="15" rot="MR90" align="center-right">GND</text>
-<text x="6.35" y="60.071" size="1.016" layer="22" font="vector" ratio="15" rot="MR90" align="center-right">RST</text>
-<text x="8.89" y="60.071" size="1.016" layer="22" font="vector" ratio="15" rot="MR90" align="center-right">3V3</text>
-<text x="11.43" y="60.071" size="1.016" layer="22" font="vector" ratio="15" rot="MR90" align="center-right">A3</text>
-<text x="13.97" y="60.071" size="1.016" layer="22" font="vector" ratio="15" rot="MR90" align="center-right">A2</text>
-<text x="16.51" y="60.071" size="1.016" layer="22" font="vector" ratio="15" rot="MR90" align="center-right">A1</text>
-<text x="19.05" y="60.071" size="1.016" layer="22" font="vector" ratio="15" rot="MR90" align="center-right">A0</text>
-<text x="21.59" y="60.071" size="1.016" layer="22" font="vector" ratio="15" rot="MR90" align="center-right">13</text>
-<text x="24.13" y="60.071" size="1.016" layer="22" font="vector" ratio="15" rot="MR90" align="center-right">12</text>
-<text x="26.67" y="60.071" size="1.016" layer="22" font="vector" ratio="15" rot="MR90" align="center-right">11</text>
-<text x="29.21" y="60.071" size="1.27" layer="22" font="vector" ratio="15" rot="MR90" align="center-right">10</text>
-<text x="1.27" y="46.863" size="1.016" layer="22" font="vector" ratio="15" rot="MR270" align="center-right">TX</text>
-<text x="3.81" y="46.863" size="1.016" layer="22" font="vector" ratio="15" rot="MR270" align="center-right">RX</text>
-<text x="6.35" y="46.863" size="1.016" layer="22" font="vector" ratio="15" rot="MR270" align="center-right">RST</text>
-<text x="8.89" y="46.863" size="1.016" layer="22" font="vector" ratio="15" rot="MR270" align="center-right">GND</text>
-<text x="11.43" y="46.863" size="1.016" layer="22" font="vector" ratio="15" rot="MR270" align="center-right">2</text>
-<text x="13.97" y="46.863" size="1.016" layer="22" font="vector" ratio="15" rot="MR270" align="center-right">3</text>
-<text x="16.51" y="46.863" size="1.016" layer="22" font="vector" ratio="15" rot="MR270" align="center-right">4</text>
-<text x="19.05" y="46.863" size="1.016" layer="22" font="vector" ratio="15" rot="MR270" align="center-right">5</text>
-<text x="21.59" y="46.863" size="1.016" layer="22" font="vector" ratio="15" rot="MR270" align="center-right">6</text>
-<text x="24.13" y="46.863" size="1.016" layer="22" font="vector" ratio="15" rot="MR270" align="center-right">7</text>
-<text x="26.67" y="46.863" size="1.016" layer="22" font="vector" ratio="15" rot="MR270" align="center-right">8</text>
-<text x="29.21" y="46.863" size="1.016" layer="22" font="vector" ratio="15" rot="MR270" align="center-right">9</text>
+<text x="1.27" y="46.863" size="1.016" layer="22" font="vector" ratio="15" rot="SMR270" align="center-right">TX</text>
+<text x="3.81" y="46.863" size="1.016" layer="22" font="vector" ratio="15" rot="SMR270" align="center-right">RX</text>
+<text x="6.35" y="46.863" size="1.016" layer="22" font="vector" ratio="15" rot="SMR270" align="center-right">RST</text>
+<text x="8.89" y="46.863" size="1.016" layer="22" font="vector" ratio="15" rot="SMR270" align="center-right">GND</text>
+<text x="11.43" y="46.863" size="1.016" layer="22" font="vector" ratio="15" rot="SMR270" align="center-right">2</text>
+<text x="13.97" y="46.863" size="1.016" layer="22" font="vector" ratio="15" rot="SMR270" align="center-right">3</text>
+<text x="16.51" y="46.863" size="1.016" layer="22" font="vector" ratio="15" rot="SMR270" align="center-right">4</text>
+<text x="19.05" y="46.863" size="1.016" layer="22" font="vector" ratio="15" rot="SMR270" align="center-right">5</text>
+<text x="21.59" y="46.863" size="1.016" layer="22" font="vector" ratio="15" rot="SMR270" align="center-right">6</text>
+<text x="24.13" y="46.863" size="1.016" layer="22" font="vector" ratio="15" rot="SMR270" align="center-right">7</text>
+<text x="26.67" y="46.863" size="1.016" layer="22" font="vector" ratio="15" rot="SMR270" align="center-right">8</text>
+<text x="29.21" y="46.863" size="1.016" layer="22" font="vector" ratio="15" rot="SMR270" align="center-right">9</text>
 <text x="10.033" y="55.88" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="center-right">A5</text>
 <text x="12.573" y="55.88" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="center-right">A4</text>
-<text x="10.033" y="55.88" size="1.016" layer="22" font="vector" ratio="15" rot="MR90" align="center-right">A5</text>
-<text x="12.573" y="55.88" size="1.016" layer="22" font="vector" ratio="15" rot="MR90" align="center-right">A4</text>
 <text x="20.447" y="55.88" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="center-right">A7</text>
 <text x="22.987" y="55.88" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="center-right">A6</text>
-<text x="20.447" y="55.88" size="1.016" layer="22" font="vector" ratio="15" rot="MR90" align="center-right">A7</text>
-<text x="22.987" y="55.88" size="1.016" layer="22" font="vector" ratio="15" rot="MR90" align="center-right">A6</text>
 <text x="29.972" y="40.132" size="1.27" layer="22" font="vector" ratio="15" rot="SMR270">Arduino Block</text>
-<text x="16.5862" y="22.0472" size="0.8128" layer="22" font="vector" ratio="15" rot="MR0" align="center-left">VSYS</text>
-<text x="16.5862" y="21.1328" size="0.8128" layer="22" font="vector" ratio="15" rot="MR0" align="center-left">DCIN</text>
+<text x="16.5862" y="23.4442" size="0.8128" layer="22" font="vector" ratio="15" rot="MR0" align="center-left">VSYS</text>
+<text x="16.5862" y="22.2758" size="0.8128" layer="22" font="vector" ratio="15" rot="MR0" align="center-left">DCIN</text>
 <dimension x1="0" y1="1.778" x2="30.48" y2="1.778" x3="15.24" y3="-5.333996875" textsize="1.778" layer="51" dtype="horizontal" unit="inch"/>
 <dimension x1="1.905" y1="1.905" x2="28.575" y2="1.905" x3="15.24" y3="-2.794" textsize="1.778" layer="51" dtype="horizontal" unit="inch"/>
 <dimension x1="28.575" y1="1.905" x2="28.575" y2="42.545" x3="33.528" y3="22.225" textsize="1.778" layer="51" dtype="vertical" unit="inch"/>
 <dimension x1="28.752" y1="0" x2="26.67" y2="62.23" x3="36.576" y3="31.115" textsize="1.778" layer="51" dtype="vertical" unit="inch"/>
 <text x="31.75" y="-2.54" size="1.778" layer="51">Note: Units are in Inches</text>
+<text x="13.843" y="6.35" size="0.8128" layer="22" font="vector" ratio="15" rot="MR180" align="center-left">VIN</text>
+<text x="6.35" y="59.817" size="1.016" layer="22" font="vector" ratio="15" rot="SMR270" align="center-left">RST</text>
+<text x="3.81" y="59.817" size="1.016" layer="22" font="vector" ratio="15" rot="SMR270" align="center-left">GND</text>
+<text x="1.27" y="59.817" size="1.016" layer="22" font="vector" ratio="15" rot="SMR270" align="center-left">VIN</text>
+<text x="8.89" y="59.817" size="1.016" layer="22" font="vector" ratio="15" rot="SMR270" align="center-left">3V3</text>
+<text x="11.43" y="59.817" size="1.016" layer="22" font="vector" ratio="15" rot="SMR270" align="center-left">A3</text>
+<text x="13.97" y="59.817" size="1.016" layer="22" font="vector" ratio="15" rot="SMR270" align="center-left">A2</text>
+<text x="16.51" y="59.817" size="1.016" layer="22" font="vector" ratio="15" rot="SMR270" align="center-left">A1</text>
+<text x="19.05" y="59.817" size="1.016" layer="22" font="vector" ratio="15" rot="SMR270" align="center-left">A0</text>
+<text x="21.59" y="59.817" size="1.016" layer="22" font="vector" ratio="15" rot="SMR270" align="center-left">13</text>
+<text x="24.13" y="59.817" size="1.016" layer="22" font="vector" ratio="15" rot="SMR270" align="center-left">12</text>
+<text x="26.67" y="59.817" size="1.016" layer="22" font="vector" ratio="15" rot="SMR270" align="center-left">11</text>
+<text x="29.21" y="59.817" size="1.016" layer="22" font="vector" ratio="15" rot="SMR270" align="center-left">10</text>
+<text x="20.447" y="55.626" size="1.016" layer="22" font="vector" ratio="15" rot="SMR270" align="center-left">A7</text>
+<text x="22.987" y="55.626" size="1.016" layer="22" font="vector" ratio="15" rot="SMR270" align="center-left">A6</text>
+<text x="10.033" y="55.626" size="1.016" layer="22" font="vector" ratio="15" rot="SMR270" align="center-left">A5</text>
+<text x="12.573" y="55.626" size="1.016" layer="22" font="vector" ratio="15" rot="SMR270" align="center-left">A4</text>
 </plain>
 <libraries>
 <library name="SparkFun-Aesthetics">
@@ -2601,7 +2600,7 @@ design rules under a new name.</description>
 <element name="JP3" library="SparkFun-Connectors" package="1X12_NO_SILK" value="M12NO_SILK" x="1.27" y="45.72"/>
 <element name="JP4" library="SparkFun-Connectors" package="1X02_NO_SILK" value="M021X02_NO_SILK" x="12.573" y="56.769" rot="R180"/>
 <element name="JP5" library="SparkFun-Connectors" package="1X02_NO_SILK" value="M021X02_NO_SILK" x="22.987" y="56.769" rot="R180"/>
-<element name="SJ5" library="SparkFun-Passives" package="PAD-JUMPER-2-NO_YES_SILK" value="DCIN" x="17.78" y="21.59" rot="MR90"/>
+<element name="SJ5" library="SparkFun-Passives" package="PAD-JUMPER-2-NO_YES_SILK" value="DCIN" x="17.78" y="22.86" rot="MR90"/>
 <element name="S1" library="SparkFun-Electromechanical" package="TACTILE_SWITCH-SMD-RIGHT-ANGLE" value="RESET" x="1.778" y="37.846" rot="R270">
 <attribute name="PROD_ID" value="COMP-12265" x="1.778" y="37.846" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
@@ -2704,8 +2703,8 @@ design rules under a new name.</description>
 <wire x1="14.6812" y1="7.62" x2="16.8656" y2="9.8044" width="0.254" layer="16"/>
 <wire x1="20.7512" y1="23.9008" x2="21.5212" y2="23.9008" width="0.254" layer="1"/>
 <contactref element="SJ5" pad="2"/>
-<wire x1="17.78" y1="22.04" x2="18.103" y2="22.04" width="0.1524" layer="16"/>
-<wire x1="18.103" y1="22.04" x2="19.9638" y2="23.9008" width="0.1524" layer="16"/>
+<wire x1="17.78" y1="23.31" x2="19.373" y2="23.31" width="0.1524" layer="16"/>
+<wire x1="19.373" y1="23.31" x2="19.9638" y2="23.9008" width="0.1524" layer="16"/>
 <wire x1="19.9638" y1="23.9008" x2="21.5212" y2="23.9008" width="0.1524" layer="16"/>
 <polygon width="0.1524" layer="16" isolate="0.0508">
 <vertex x="23.495" y="22.098"/>
@@ -4091,8 +4090,8 @@ design rules under a new name.</description>
 <wire x1="21.97" y1="20.58" x2="20.579" y2="21.971" width="0.1524" layer="16"/>
 <wire x1="20.579" y1="21.971" x2="20.1168" y2="21.971" width="0.1524" layer="16"/>
 <contactref element="SJ5" pad="1"/>
-<wire x1="17.78" y1="21.14" x2="19.2858" y2="21.14" width="0.1524" layer="16"/>
-<wire x1="19.2858" y1="21.14" x2="20.1168" y2="21.971" width="0.1524" layer="16"/>
+<wire x1="17.78" y1="22.41" x2="19.6778" y2="22.41" width="0.1524" layer="16"/>
+<wire x1="19.6778" y1="22.41" x2="20.1168" y2="21.971" width="0.1524" layer="16"/>
 </signal>
 </signals>
 <errors>
@@ -4103,22 +4102,16 @@ design rules under a new name.</description>
 <approved hash="19,16,7a9ee1cf48efec99"/>
 <approved hash="19,16,997bf84303db9f6f"/>
 <approved hash="19,16,5d295e8c6ecd88e4"/>
-<approved hash="19,16,0efd437ec6f8d786"/>
 <approved hash="19,16,0ecd2c75ae11d054"/>
+<approved hash="19,16,0efd437ec6f8d786"/>
 <approved hash="19,16,0fcd3fd33d2551c6"/>
-<approved hash="19,16,5d3ecabbf1393c1e"/>
-<approved hash="19,16,afd43f9605c1cf0f"/>
 <approved hash="19,16,c26955996fd0a2f8"/>
+<approved hash="19,16,afd43f9605c1cf0f"/>
+<approved hash="19,16,5d3ecabbf1393c1e"/>
 <approved hash="6,16,132ce04eca4c8556"/>
 <approved hash="6,16,7991be62df1a57ec"/>
 <approved hash="6,16,68c42002231c6bda"/>
 </errors>
 </board>
 </drawing>
-<compatibility>
-<note version="6.3" minversion="6.2.2" severity="warning">
-Since Version 6.2.2 text objects can contain more than one line,
-which will not be processed correctly with this version.
-</note>
-</compatibility>
 </eagle>
